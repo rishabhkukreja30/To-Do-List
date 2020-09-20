@@ -1,0 +1,19 @@
+.struct {
+  background-color: rgba(180, 180, 180, 0.5);
+}
+
+.heading {
+  margin: 50px auto;
+  color: #52575d;
+}
+
+
+
+#newTaskHelp {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+#ultasks  li.done {
+  text-decoration: line-through;
+}

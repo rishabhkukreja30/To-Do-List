@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>TO-DO-LIST</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+
+<body class="struct">
+
+  <div class="container">
+    <h1 class = "heading" align="center"> TO DO LIST</h1>
+
+    <div class="row">
+      <div class="col-md-7">
+        <div class="form-group">
+          <label for="newTask">New Task</label>
+          <input type="text" class="form-control" id="newTask" aria-describedby="newTask">
+          <small id="newTaskHelp" class="form-text text-muted">A short description of your task</small>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="col-md-5 row">
+
+        <div class="col-6 col-sm-3 col-md-6 p-1">
+          <button class="btn btn-success col-md m-2" disabled id="buttonAdd">
+            <i class="fas fa-plus-square"></i> Add</button>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-6 p-1">
+          <button class="btn btn-danger col-md m-2" disabled id="buttonReset">
+            <i class="fas fa-backspace"></i></i> Reset</button>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-6 p-1">
+          <button class="btn btn-info col-md m-2" disabled id="buttonSort">
+            <i class="fas fa-sort-amount-down"></i> Sort</button>
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-6 p-1">
+          <button class="btn btn-warning col-md m-2" disabled id="buttonCleanUp">
+            <i class="fas fa-trash-alt"></i> CleanUp</button>
+        </div>
+
+      </div>
+
+
+
+    <!-- List of items -->
+    <ul class="list-group m-2" id="ultasks">
+
+    </ul>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
